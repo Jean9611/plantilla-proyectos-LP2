@@ -1,20 +1,30 @@
 <!DOCTYPE html>
-<head>
-    <link rel="stylesheet" id="ppress-select2-css" href="css/style.css" type="text/css">
-    <script type="text/javascript" src="js/plantilla.js"></script>
-</head>
-<body>
-    <div class="divContainer">
-        <h1>¡Bienvenido!</h1>
-        <p>Oprime el botón para ejecutar tu código JS.</p>
-        <button onclick="click_boton()">Ejecutar</button>
-    </div>
-    <div class="divContainer">
-        <div class="divResultado">
-            <div class="divContainer">
-                <label id="lblResultado"></label>
-            </div>
+    <head>
+        <link rel="stylesheet" id="ppress-select2-css" href="css/style.css" type="text/css">
+        <script type="text/javascript" src="js/plantilla.js"></script>
+    </head>
+    <body>
+        <!--A continuación se encuentra mi menú-->
+        <div id="divMenu" class="divContainer">
+            <h1>¡Bienvenido!</h1>
+            <button class="botonVerde" onclick="click_boton_cargar_listado()">Cargar Listado</button>
+            <button class="botonVerde" onclick="click_boton_obtener_participante()">Obtener Participante</button>
+            <button class="botonVerde" onclick="click_boton_registrar_asistencia()">Registrar Asistencia</button>
         </div>
-    </div>
-</body>
+
+
+        <div id="divCargarEstudiantes" style="text-align: center; display: none;">
+            <button class="botonVerde" onclick="click_boton_regresar()">Regresar al Menú</button>
+            <h1>Cargar Listado</h1>
+            <textarea rows="12" cols="120"></textarea>
+            <br/><br/><br/>
+            <button class="botonVerde">Cargar</button>
+        </div>
+
+        <div id="divObtenerParticipante" style="text-align: center; display: none;">
+            <button class="botonVerde" onclick="click_boton_regresar()">Regresar al Menú</button>
+            <h1>Obtener Participante</h1>
+            <button class="botonVerde">Obtener</button>
+        </div>
+    </body>
 </html>

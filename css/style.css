@@ -13,3 +13,14 @@ body{
     border: solid 1px;
     margin: 60px;
 }
+
+.botonVerde{
+    padding: 7px;
+    width: 200px;
+    height: 36px;
+    background: #56a520;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    box-shadow: -4px 5px #bababa;
+}
