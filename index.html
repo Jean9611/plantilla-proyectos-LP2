@@ -6,7 +6,7 @@
     <body>
         <!--A continuación se encuentra mi menú-->
         <div id="divMenu" class="divContainer">
-            <h1>¡Bienvenido!</h1>
+            <h1 id="titulo">¡Bienvenido!</h1>
             <button class="botonVerde" onclick="click_boton_cargar_listado()">Cargar Listado</button>
             <button class="botonVerde" onclick="click_boton_obtener_participante()">Obtener Participante</button>
             <button class="botonVerde" onclick="click_boton_registrar_asistencia()">Registrar Asistencia</button>
@@ -16,15 +16,21 @@
         <div id="divCargarEstudiantes" style="text-align: center; display: none;">
             <button class="botonVerde" onclick="click_boton_regresar()">Regresar al Menú</button>
             <h1>Cargar Listado</h1>
-            <textarea rows="12" cols="120"></textarea>
+            <textarea id="taEstudiantes" rows="12" cols="120"></textarea>
             <br/><br/><br/>
-            <button class="botonVerde">Cargar</button>
+            <button class="botonVerde" onclick="click_boton_cargar()">Cargar</button>
         </div>
 
         <div id="divObtenerParticipante" style="text-align: center; display: none;">
             <button class="botonVerde" onclick="click_boton_regresar()">Regresar al Menú</button>
             <h1>Obtener Participante</h1>
-            <button class="botonVerde">Obtener</button>
+            <button onclick="click_boton_obtener()" class="botonVerde">Obtener</button>
+            <p id="nombreEstudiante"></p>
+        </div>
+
+        <div id="divAsistencia" style="text-align: center; display: none;">
+            <button class="botonVerde" onclick="click_boton_regresar()">Regresar al Menú</button>
+            <h1>Registrar Asistencia</h1>
         </div>
     </body>
 </html>
