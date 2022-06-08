@@ -24,3 +24,8 @@ body{
     border-radius: 15px;
     box-shadow: -4px 5px #bababa;
 }
+
+
+td{
+    border: solid 1px;
+}

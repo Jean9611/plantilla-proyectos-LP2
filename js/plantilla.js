@@ -47,3 +47,20 @@ function obtener_numero_aleatrorio(valor_inicial, valor_final){
 }
 
 
+function mostrar_tabla(){
+    var tablaHtml = "";
+    //imprimir etiqueta apertura de tabla
+    tablaHtml += "<table>";
+    for(var i=0; i < arreglo_estudiantes.length; i++){
+        //filas
+        tablaHtml += "<tr>";
+        tablaHtml += "<td>";
+        tablaHtml += arreglo_estudiantes[i];
+        tablaHtml += "</td>";
+        tablaHtml += "</tr>";
+    }
+    //imprimir etiqueta cierre de tabla
+    tablaHtml += "</table>";
+    document.getElementById("idTablaEstudiantes").innerHTML = tablaHtml;
+}
+
