@@ -1,4 +1,5 @@
 var arreglo_estudiantes = [];
+var arreglo_asistencias = [];
 
 function click_boton_cargar_listado(){
     //Este es un comentario
@@ -29,6 +30,10 @@ function click_boton_regresar(){
 function click_boton_cargar(){
     var listado_estudiantes = document.getElementById("taEstudiantes").value;
     arreglo_estudiantes = listado_estudiantes.split(",");
+    arreglo_asistencias = new Array(arreglo_estudiantes.length);
+    for(var i = 0; i < arreglo_asistencias.length; i++){
+        arreglo_asistencias[i] = false;
+    }
     console.log(arreglo_estudiantes);
 }
 
@@ -57,10 +62,23 @@ function mostrar_tabla(){
         tablaHtml += "<td>";
         tablaHtml += arreglo_estudiantes[i];
         tablaHtml += "</td>";
+        tablaHtml += "<td>";
+        if(arreglo_asistencias[i] == false)
+            tablaHtml += "<button class='botonVerde' onclick='registrar_asistencia(" + i + ")'>Registrar asistencia</button>";
+        else{
+            tablaHtml +="Asistencia registrada";
+        }
+        tablaHtml += "</td>";
         tablaHtml += "</tr>";
     }
     //imprimir etiqueta cierre de tabla
     tablaHtml += "</table>";
     document.getElementById("idTablaEstudiantes").innerHTML = tablaHtml;
 }
+
+function registrar_asistencia(posicion){
+    arreglo_asistencias[posicion] = true;
+    mostrar_tabla();
+}
+
 
