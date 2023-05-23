@@ -1,0 +1,25 @@
+
+body{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.divPantalla{
+    text-align: center;
+    padding: 50px 150px 50px 150px;
+}
+
+.divResultado{
+    border: solid 1px;
+    margin: 60px;
+}
+
+.botonVerde{
+    background-color: #56a520;
+    color: white;
+    padding: 10px 30px;
+    width: 250px;
+    margin: 30px;
+    border-radius: 30px;
+}
+
