@@ -6,17 +6,30 @@
 <body>
     <div id="divMenu" class="divPantalla">
         <h1>¡Bienvenido!</h1>
-        <button onclick="click_boton_cargar_listado()" class="botonVerde">Cargar Listado</button>
+        <button onclick="click_boton_cargar_listado()" class="botonVerde" id="btnCargarListado">Cargar Listado</button>
         <button onclick="click_boton_obtener_participante()" class="botonVerde">Obtener Participante</button>
         <button onclick="click_boton_registrar_asistencia()" class="botonVerde">Registrar Asistencia</button>
     </div>
     <div id="divCargarListado" class="divPantalla" style="display: none;">
-        divCargarListado
+        <div>
+            <div class="divBotonRegresar">
+                <button class="botonVerde" onclick="click_regresar_menu()">Regresar al Menú</button>
+            </div>
+            <h1>Cargar Listado</h1>
+            <textarea name="Text1" cols="120" rows="16"></textarea><br>
+            <button class="botonVerde" id="btnCargarEstudiantes">Cargar</button>
+        </div>
     </div>
     <div id="divObtenerParticipante" class="divPantalla" style="display: none;">
+        <div class="divBotonRegresar">
+            <button class="botonVerde" onclick="click_regresar_menu()">Regresar al Menú</button>
+        </div>
         divObtenerParticipante
     </div>
     <div id="divRegistrarAsistencia" class="divPantalla" style="display: none;">
+        <div class="divBotonRegresar">
+            <button class="botonVerde" onclick="click_regresar_menu()">Regresar al Menú</button>
+        </div>
         divRegistrarAsistencia
     </div>
 

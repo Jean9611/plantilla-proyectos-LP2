@@ -23,3 +23,10 @@ body{
     border-radius: 30px;
 }
 
+textarea{
+    display: inline-block;
+}
+
+.divBotonRegresar{
+    text-align: left;
+}

@@ -27,3 +27,12 @@ function click_boton_registrar_asistencia(){
     document.getElementById('divMenu').style = "display: none;"
 }
 
+
+function click_regresar_menu(){
+    document.getElementById('divMenu').style = "display: block;"
+    document.getElementById('divCargarListado').style = "display: none;";
+    document.getElementById('divObtenerParticipante').style = "display: none;";
+    document.getElementById('divRegistrarAsistencia').style = "display: none;";
+}
+
+
