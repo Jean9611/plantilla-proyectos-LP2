@@ -16,15 +16,17 @@
                 <button class="botonVerde" onclick="click_regresar_menu()">Regresar al Menú</button>
             </div>
             <h1>Cargar Listado</h1>
-            <textarea name="Text1" cols="120" rows="16"></textarea><br>
-            <button class="botonVerde" id="btnCargarEstudiantes">Cargar</button>
+            <textarea id="taListado" name="Text1" cols="120" rows="16"></textarea><br>
+            <button class="botonVerde" id="btnCargarEstudiantes" onclick="click_cargar_listado()">Cargar</button>
         </div>
     </div>
     <div id="divObtenerParticipante" class="divPantalla" style="display: none;">
         <div class="divBotonRegresar">
             <button class="botonVerde" onclick="click_regresar_menu()">Regresar al Menú</button>
         </div>
-        divObtenerParticipante
+        <h1>Obtener Participante</h1>
+        <button class="botonVerde" onclick="click_obtener_estudiante()">Obtener</button><br>
+        <label id="lblObtenerEstudiante"></label>
     </div>
     <div id="divRegistrarAsistencia" class="divPantalla" style="display: none;">
         <div class="divBotonRegresar">

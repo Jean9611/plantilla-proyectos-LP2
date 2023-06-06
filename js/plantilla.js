@@ -36,3 +36,19 @@ function click_regresar_menu(){
 }
 
 
+var arreglo_nombres = [];
+function click_cargar_listado(){
+    var texto_original = document.getElementById("taListado").value;
+    arreglo_nombres = texto_original.split(",");
+    console.log(arreglo_nombres);
+
+}
+
+
+function click_obtener_estudiante(){
+    var numero_aleatorio = Math.random() * (arreglo_nombres.length - 1);
+    numero_aleatorio = Math.round(numero_aleatorio);
+    document.getElementById("lblObtenerEstudiante").innerHTML = arreglo_nombres[numero_aleatorio];
+}
+
+
