@@ -30,3 +30,13 @@ textarea{
 .divBotonRegresar{
     text-align: left;
 }
+
+td{
+    border: solid;
+}
+
+
+#div_contenido_registro_asistencia{
+    display: flex;
+    justify-content: center;
+}
