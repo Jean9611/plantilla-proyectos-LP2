@@ -62,7 +62,12 @@ function dibujar_tabla(){
     var texto_salida = "<table>";
     for(var i = 0; i < arreglo_nombres.length; i++){
         texto_salida += "<tr><td>" + arreglo_nombres[i] + "</td>";
-        texto_salida += "<td><button class=\"botonVerde\" style=\"margin:0;\" onclick='registrar_asistencia(" + i + ")'>Registrar Asistencia</button></td></tr>";
+        if(arreglo_control_asistencia[i] == true){
+            texto_salida += "<td>Asistencia registrada</td></tr>";
+        }else{
+            texto_salida += "<td><button class=\"botonVerde\" style=\"margin:0;\" onclick='registrar_asistencia(" + i + ")'>Registrar Asistencia</button></td></tr>";
+        }
+        
     }
     texto_salida += "</table>";
     document.getElementById("div_contenido_registro_asistencia").innerHTML = texto_salida;
@@ -72,6 +77,9 @@ function dibujar_tabla(){
 function registrar_asistencia(posicion){
     arreglo_control_asistencia[posicion] = true;
     console.log(arreglo_control_asistencia);
+
+    document.getElementById("div_contenido_registro_asistencia").innerHTML = "";
+    dibujar_tabla();
 }
 
 
